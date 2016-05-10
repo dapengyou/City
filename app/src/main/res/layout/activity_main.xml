@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+    <!-- 上边主页面 -->
+
+    <fragment
+        android:id="@+id/fragement_schedule"
+        android:name="com.uit.uit2013.ui.fragment.FragmentSchedule"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_life"
+        android:name="com.uit.uit2013.ui.fragment.FragmentLife"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+    <fragment
+        android:id="@+id/fragement_study"
+        android:name="com.uit.uit2013.ui.fragment.FragmentStudy"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+
+    <fragment
+        android:id="@+id/fragement_setting"
+        android:name="com.uit.uit2013.ui.fragment.FragmentSeeting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="10" />
+    </LinearLayout>
+    <!-- 底部菜单页面 -->
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CEF4FF"
+
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/rbOne"
+            style="@style/AppTheme"
+            android:drawableTop="@drawable/nn_ic_schedule"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="课表"
+            android:padding="4dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/rbTwo"
+            style="@style/AppTheme"
+            android:drawableTop="@drawable/nn_ic_life"
+            android:gravity="center"
+            android:text="生活"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/rbThree"
+            style="@style/AppTheme"
+            android:drawableTop="@drawable/nn_ic_study"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="学习"
+            android:padding="4dp"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/rbFour"
+            style="@style/AppTheme"
+            android:drawableTop="@drawable/nn_ic_setting"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:text="设置"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

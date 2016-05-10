@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/appbackground"
+    >
+
+    <include layout="@layout/title_bar" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableTop="@drawable/icon_book"
+            android:id="@+id/study_book"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="图书"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/button_back_life"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/study_score"
+            android:drawableTop="@drawable/icon_score"
+            android:text="成绩"
+            android:textSize="16dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/button_back_life"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="5dp"
+            android:gravity="center"
+            android:textColor="#1c128c"
+            android:textSize="16dp"
+            android:text="更多学习服务正在开发中,敬请期待."/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
